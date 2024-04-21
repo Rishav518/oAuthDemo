@@ -15,6 +15,7 @@ export default async function Profile() {
             <p className="mb-3 text-5xl text-center font-semibold">
               Profile Page
             </p>
+            
             {!user ? (
               <p>Loading...</p>
             ) : (
