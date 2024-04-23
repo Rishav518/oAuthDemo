@@ -61,14 +61,9 @@ export const LoginForm = () => {
         <p className="text-center bg-red-300 py-4 mb-6 rounded">{error}</p>
       )}
 
-      {/* OR divider */}
-      <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
-        <p className="text-center font-semibold mx-4 mb-0">OR</p>
-      </div>
-
       {/* Sign In with Google button */}
       <a
-        className="px-7 py-2 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center mb-3"
+        className="px-1 py-2 text-white font-medium text-sm leading-snug uppercase shadow-md hover:shadow-xl hover:text-gray-800 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center"
         style={{ backgroundColor: "#ffffff", color: "gray" }}
         onClick={() => signIn("google", { callbackUrl })}
         role="button"
@@ -84,7 +79,7 @@ export const LoginForm = () => {
 
       {/* Sign In with GitHub button */}
       <a
-        className="px-7 py-2 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center"
+        className="px-1 py-2 text-white font-medium text-sm leading-snug uppercase shadow-md hover:shadow-xl hover:text-gray-400 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center"
         style={{ backgroundColor: "#000000" }}
         onClick={() => signIn("github", { callbackUrl })}
         role="button"
